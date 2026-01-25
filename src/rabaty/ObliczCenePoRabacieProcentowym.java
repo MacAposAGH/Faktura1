@@ -1,11 +1,11 @@
 package rabaty;
 
-import main.Konfiguracja;
+import main.Singleton;
 
-public class ObliczCenePoRabacieProcentowym implements ObliczCenePoRabacie {
+public class ObliczCenePoRabacieProcentowym implements Strategy {
     @Override
     public double obliczCenePoRabacie(double cena) {
-        Konfiguracja instance = Konfiguracja.getInstance();
+        Singleton instance = Singleton.getInstance();
         return cena * (1 - instance.getProcentRabatu() / 100);
     }
 }

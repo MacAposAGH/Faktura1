@@ -1,17 +1,17 @@
 package main;
 
-import rabaty.ObliczCenePoRabacie;
+import rabaty.Strategy;
 import rabaty.ObliczCenePoRabacieProcentowym;
 
-public class Konfiguracja {
-    private static Konfiguracja instance;
+public class Singleton {
+    private static Singleton instance;
 
-    private Konfiguracja() {
+    private Singleton() {
     }
 
-    public static Konfiguracja getInstance() {
+    public static Singleton getInstance() {
         if (instance == null) {
-            instance = new Konfiguracja();
+            instance = new Singleton();
         }
         return instance;
     }
@@ -24,7 +24,7 @@ public class Konfiguracja {
         return 70;
     }
 
-    public ObliczCenePoRabacie getAtkualnyRabat(){
+    public Strategy getAtkualnyRabat(){
         return new ObliczCenePoRabacieProcentowym();
 //        return new ObliczCenePoRabacieKwotowym();
     }

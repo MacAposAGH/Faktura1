@@ -1,5 +1,5 @@
 package rabaty;
 
-public interface ObliczCenePoRabacie {
+public interface Strategy {
 	double obliczCenePoRabacie(double cena);
 }

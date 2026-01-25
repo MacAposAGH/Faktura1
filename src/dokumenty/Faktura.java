@@ -1,8 +1,8 @@
 package dokumenty;
 
-import main.Konfiguracja;
+import main.Singleton;
 import magazyn.Towar;
-import rabaty.ObliczCenePoRabacie;
+import rabaty.Strategy;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,12 +14,12 @@ public class Faktura {
     String kontrahent;
     ArrayList<Pozycja> pozycje = new ArrayList<>();
     double suma = 0;
-    ObliczCenePoRabacie obliczCenePoRabacie;
+    Strategy obliczCenePoRabacie;
 
     public Faktura(Date dataSprzedazy, String kontrahent) {
         this.dataSprzedazy = dataSprzedazy;
         this.kontrahent = kontrahent;
-        this.obliczCenePoRabacie = Konfiguracja.getInstance().getAtkualnyRabat();
+        this.obliczCenePoRabacie = Singleton.getInstance().getAtkualnyRabat();
     }
 
     public void dodajPozycje(Towar towar, double ilosc) {

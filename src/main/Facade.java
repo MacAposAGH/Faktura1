@@ -5,7 +5,7 @@ import dokumenty.Pozycja;
 
 import java.util.Iterator;
 
-public class Printer {
+public class Facade {
     static void wypiszFakture(Faktura faktura) {
         System.out.println("=====================================================");
         System.out.println("FA z dnia: " + faktura.getDataSprzedazy().toString());

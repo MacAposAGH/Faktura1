@@ -22,7 +22,7 @@ public class Ui {
 		f.dodajPozycje(t1,3);
 		f.dodajPozycje(t2, 5);
 		
-		Printer.wypiszFakture(f);
+		Facade.wypiszFakture(f);
 
 		//TEST ZEWN. rabatu
 		LosowyRabat lr=new LosowyRabat();
