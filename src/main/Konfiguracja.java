@@ -1,7 +1,6 @@
-package konfiguracja;
+package main;
 
 import rabaty.ObliczCenePoRabacie;
-import rabaty.ObliczCenePoRabacieKwotowym;
 import rabaty.ObliczCenePoRabacieProcentowym;
 
 public class Konfiguracja {

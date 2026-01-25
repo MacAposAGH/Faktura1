@@ -1,6 +1,6 @@
 package rabaty;
 
-import konfiguracja.Konfiguracja;
+import main.Konfiguracja;
 
 public class ObliczCenePoRabacieProcentowym implements ObliczCenePoRabacie {
     @Override

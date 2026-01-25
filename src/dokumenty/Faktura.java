@@ -1,6 +1,6 @@
 package dokumenty;
 
-import konfiguracja.Konfiguracja;
+import main.Konfiguracja;
 import magazyn.Towar;
 import rabaty.ObliczCenePoRabacie;
 
