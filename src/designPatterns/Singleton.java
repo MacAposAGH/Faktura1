@@ -1,8 +1,9 @@
-package main;
+package designPatterns;
 
+import designPatterns.adapter.ClassAdapter;
 import rabaty.Strategy;
-import rabaty.ObliczCenePoRabacieProcentowym;
 
+//Konfiguracja
 public class Singleton {
     private static Singleton instance;
 
@@ -25,7 +26,7 @@ public class Singleton {
     }
 
     public Strategy getAtkualnyRabat(){
-        return new ObliczCenePoRabacieProcentowym();
-//        return new ObliczCenePoRabacieKwotowym();
+//        return new ObjectAdapter();
+        return new ClassAdapter();
     }
 }

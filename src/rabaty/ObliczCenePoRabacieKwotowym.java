@@ -1,6 +1,6 @@
 package rabaty;
 
-import main.Singleton;
+import designPatterns.Singleton;
 
 public class ObliczCenePoRabacieKwotowym implements Strategy {
     @Override

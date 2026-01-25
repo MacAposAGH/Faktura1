@@ -1,13 +1,12 @@
 package dokumenty;
 
-import main.Singleton;
+import designPatterns.Singleton;
 import magazyn.Towar;
 import rabaty.Strategy;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
-
 
 public class Faktura {
     Date dataSprzedazy;
