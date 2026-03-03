@@ -18,7 +18,7 @@ public class Faktura {
     public Faktura(Date dataSprzedazy, String kontrahent) {
         this.dataSprzedazy = dataSprzedazy;
         this.kontrahent = kontrahent;
-        this.obliczCenePoRabacie = Singleton.getInstance().getAtkualnyRabat();
+        this.obliczCenePoRabacie = Singleton.getInstance().getObliczanieRabatu();
     }
 
     public void dodajPozycje(Towar towar, double ilosc) {

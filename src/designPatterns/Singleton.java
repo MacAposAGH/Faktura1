@@ -1,6 +1,7 @@
 package designPatterns;
 
 import designPatterns.adapter.ClassAdapter;
+import designPatterns.adapter.ObjectAdapter;
 import rabaty.Strategy;
 
 //Konfiguracja
@@ -25,7 +26,7 @@ public class Singleton {
         return 70;
     }
 
-    public Strategy getAtkualnyRabat(){
+    public Strategy getObliczanieRabatu(){
 //        return new ObjectAdapter();
         return new ClassAdapter();
     }
